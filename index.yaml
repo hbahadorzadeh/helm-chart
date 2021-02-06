@@ -1,0 +1,38 @@
+apiVersion: v1
+entries:
+  kubernetes-event-exporter:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2021-02-06T14:46:50.875226043+03:30"
+    description: A Helm chart for Kubernetes
+    digest: b352595d3d1aa1e68fe23a032465c8bb731bd06b9bdbaa9c9016d325075b0dce
+    name: kubernetes-event-exporter
+    type: application
+    urls:
+    - https://hbahadorzadeh.github.io/helm-chart/kubernetes-event-exporter-0.1.0.tgz
+    version: 0.1.0
+  matrix:
+  - apiVersion: v2
+    appVersion: 1.22.1
+    created: "2021-02-06T14:46:50.879848854+03:30"
+    dependencies:
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.helm.sh/stable
+      version: 8.0.0
+    description: A Helm chart to deploy a Matrix homeserver stack into Kubernetes
+    digest: bf1320dcbd7243b25bddbbdd6601bb3e1d906ceeb6c9f9036018323d6d7fe4c7
+    home: https://github.com/dacruz21/matrix-chart
+    icon: https://dacruz21.github.io/helm-charts/icons/matrix.svg
+    maintainers:
+    - email: david@typokign.com
+      name: David Cruz
+      url: https://github.com/dacruz21/
+    name: matrix
+    sources:
+    - https://github.com/dacruz21/matrix-chart
+    type: application
+    urls:
+    - https://hbahadorzadeh.github.io/helm-chart/matrix-2.8.0.tgz
+    version: 2.8.0
+generated: "2021-02-06T14:46:50.874696581+03:30"
